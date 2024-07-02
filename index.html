@@ -7,23 +7,41 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0'); /* URL to a background image of trees */
+            background-size: cover;
             margin: 0;
             padding: 0;
             text-align: center;
+            color: white;
         }
         header {
-            background-color: #4CAF50;
+            background-color: rgba(76, 175, 80, 0.8);
             color: white;
             padding: 1em;
         }
         section {
             padding: 2em;
+            background-color: rgba(0, 0, 0, 0.5);
+            margin: 2em;
+            border-radius: 10px;
         }
         #message {
             display: none;
-            color: red;
+            color: yellow;
             font-size: 24px;
+        }
+        .bird {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+        }
+        .bird1 {
+            top: 20px;
+            left: 20px;
+        }
+        .bird2 {
+            top: 100px;
+            right: 20px;
         }
     </style>
     <script>
@@ -34,13 +52,16 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to my page baby sayang!</h1>
+        <h1>Welcome to My Personal Webpage</h1>
     </header>
     <section>
-        <h2>Hello, Baby sayang!</h2>
+        <h2>Hello, Beautiful!</h2>
         <p>Click the button below to reveal a secret message.</p>
         <button onclick="showMessage()">Click Me</button>
-        <p id="message">Lets Push and Shoot! ❤️</p>
+        <p id="message">You make my heart skip a beat! ❤️</p>
     </section>
+    <img src="https://image.flaticon.com/icons/png/512/616/616489.png" class="bird bird1" alt="bird">
+    <img src="https://image.flaticon.com/icons/png/512/616/616534.png" class="bird bird2" alt="bird">
 </body>
 </html>
+
